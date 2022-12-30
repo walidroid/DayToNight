@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(#200016,#fff);
+    height: 100vh; /* same size as any screen !!! */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    /* bach navbar matagich stars */
+    position: absolute;
+    width: 95%;
+    z-index: 10;
+    /* bach navbar matagich stars */
+    display: flex;
+    justify-content: space-between;  /* divise header left and right */
+    align-items: center;
+    margin: 30px;
+}
+
+header .logo{   /* class logo in the header (header ==>class logo) */
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul{    /* ul element in the header (header ==>element ul without .) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* remove point in the link */
+
+
+}
+header ul li {   /* li in the ul in the header */
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+}
+header ul li a:hover, .active{  /* hover active always on home */
+    background: #fff;
+    color: #200016;
+    border-radius: 20px;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;/* axe x */
+    align-items: center; /* axe Y */
+    overflow: hidden;
+}
+
+.main ::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background:linear-gradient(to top,#200016,trasparent) ;
+}
+
+.main img{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* to not stretch images */
+} 
+
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+.nouvil{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+
+}
+.content p{
+    margin: 20px;
+}
